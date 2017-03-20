@@ -21,6 +21,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -29,6 +33,9 @@ dependencies {
 
     compile 'com.jakewharton:butterknife:8.4.0'
     compile 'com.jakewharton:butterknife-compiler:8.4.0'
+    
+    compile 'info.android15.nucleus:nucleus:4.0.0'
+    compile 'info.android15.nucleus:nucleus-support-v7:4.0.0'
 
 
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
