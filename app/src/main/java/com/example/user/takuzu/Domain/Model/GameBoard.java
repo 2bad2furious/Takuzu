@@ -6,5 +6,7 @@ package com.example.user.takuzu.Domain.Model;
 
 public interface GameBoard {
     GameField[][] fields();
+    int rows();
+    int columns();
     GameBoard change(Coordinates coordinates);
 }

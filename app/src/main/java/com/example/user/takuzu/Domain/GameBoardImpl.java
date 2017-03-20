@@ -24,6 +24,17 @@ public class GameBoardImpl implements GameBoard {
         return copy(fields);
     }
 
+    @Override
+    public int rows() {
+        if(fields[0] == null) throw new IllegalArgumentException("You fucking cock");
+        return fields[0].length;
+    }
+
+    @Override
+    public int columns() {
+        return fields.length;
+    }
+
     private GameField[][] copy(GameField[][] arr){
         if(arr[0] == null) throw new IllegalArgumentException("You fucking cock");
         GameField[][] newArr = new GameField[arr.length][arr[0].length];
