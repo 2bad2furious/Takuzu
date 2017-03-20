@@ -21,7 +21,7 @@ public class GameBoardImpl implements GameBoard {
     }
 
     public GameField[][] fields() {
-        return fields.clone();
+        return copy(fields);
     }
 
     private GameField[][] copy(GameField[][] arr){
