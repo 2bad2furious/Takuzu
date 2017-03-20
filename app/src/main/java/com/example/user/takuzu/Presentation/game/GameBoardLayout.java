@@ -32,15 +32,15 @@ public class GameBoardLayout extends GridLayout {
 
     public void setBoard(GameBoard gameBoard) {
         removeAllViews();
-        setRowCount(gameBoard.rows());
-        setColumnCount(gameBoard.columns());
-
-        for (int r = 0; r < gameBoard.rows(); r++) {
-            for (int c = 0; c < gameBoard.columns(); c++) {
-                BoardFieldWidget field = new BoardFieldWidget(getContext(), gameBoard.fields().get(r).get(c), r, c);
-                addView(field);
-            }
-        }
+//        setRowCount(gameBoard.rows());
+//        setColumnCount(gameBoard.columns());
+//
+//        for (int r = 0; r < gameBoard.rows(); r++) {
+//            for (int c = 0; c < gameBoard.columns(); c++) {
+//                BoardFieldWidget field = new BoardFieldWidget(getContext(), gameBoard.fields().get(r).get(c), r, c);
+//                addView(field);
+//            }E
+//        }
 
         if (listener != null) {
             setupFieldListeners(listener);
