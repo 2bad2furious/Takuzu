@@ -5,6 +5,6 @@ package com.example.user.takuzu.Domain.Model;
  */
 
 public interface GameBoard {
-    GameField[][] getArr();
+    GameField[][] fields();
     GameBoard change(Coordinates coordinates);
 }

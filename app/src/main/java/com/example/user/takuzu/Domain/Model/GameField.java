@@ -14,4 +14,8 @@ public class GameField {
     public Color getColor(){
         return color;
     }
+
+    public GameField copy(){
+        return new GameField(color);
+    }
 }

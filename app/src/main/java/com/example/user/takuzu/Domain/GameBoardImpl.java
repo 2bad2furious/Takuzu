@@ -10,24 +10,35 @@ import com.example.user.takuzu.Domain.Model.GameField;
  */
 
 public class GameBoardImpl implements GameBoard {
-    private GameField[][] arr;
+    private GameField[][] fields;
 
     public GameBoardImpl(int size){
-        arr = new GameField[size][size];
+        fields = new GameField[size][size];
     }
 
     private GameBoardImpl(GameField[][] arr){
-        this.arr = arr;
+        this.fields = arr;
     }
 
-    public GameField[][] getArr(){
-        return arr.clone();
+    public GameField[][] fields() {
+        return copy(fields);
+    }
+
+    private GameField[][] copy(GameField[][] arr){
+        if(arr[0] == null) throw new IllegalArgumentException("You fucking cock");
+        GameField[][] newArr = new GameField[arr.length][arr[0].length];
+        for (int x = 0;x < arr.length;x++) {
+            for (int y = 0;y < arr[x].length;y++) {
+                newArr[x][y] = arr[x][y].copy();
+            }
+        }
+        return newArr;
     }
 
     @Override
     public GameBoard change(Coordinates coordinates) {
         Color newColor = null;
-        switch(arr[coordinates.getX()][coordinates.getY()].getColor()){
+        switch(fields[coordinates.getX()][coordinates.getY()].getColor()){
             case RED:{
                 newColor = Color.BLUE;
                 break;
@@ -41,8 +52,8 @@ public class GameBoardImpl implements GameBoard {
                 break;
             }
         }
-        GameField[][] newArr = arr.clone();
+        GameField[][] newArr = copy(fields);
         newArr[coordinates.getX()][coordinates.getY()] = new GameField(newColor);
-        return new GameBoardImpl(arr);
+        return new GameBoardImpl(fields);
     }
 }
