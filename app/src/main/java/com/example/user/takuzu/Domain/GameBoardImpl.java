@@ -17,7 +17,7 @@ public class GameBoardImpl implements GameBoard {
     private GameField[][] fields;
 
     public GameBoardImpl(int size){
-        fields = generate(size)
+        fields = generate(size);
     }
 
     private GameBoardImpl(GameField[][] arr){
