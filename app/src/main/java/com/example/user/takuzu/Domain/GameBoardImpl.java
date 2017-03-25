@@ -5,15 +5,19 @@ import com.example.user.takuzu.Domain.Model.Coordinates;
 import com.example.user.takuzu.Domain.Model.GameBoard;
 import com.example.user.takuzu.Domain.Model.GameField;
 
+import java.security.InvalidParameterException;
+import java.util.Random;
+
 /**
  * Created by user on 06.03.2017.
  */
 
 public class GameBoardImpl implements GameBoard {
+    private final int LOCKED_FIELDS_PERCENT = 1/6;
     private GameField[][] fields;
 
     public GameBoardImpl(int size){
-        fields = new GameField[size][size];
+        fields = generate(size)
     }
 
     private GameBoardImpl(GameField[][] arr){
@@ -36,7 +40,7 @@ public class GameBoardImpl implements GameBoard {
     }
 
     private GameField[][] copy(GameField[][] arr){
-        if(arr[0] == null) throw new IllegalArgumentException("You fucking cock");
+        if(arr[0] == null) throw new IllegalArgumentException("Bollocks");
         GameField[][] newArr = new GameField[arr.length][arr[0].length];
         for (int x = 0;x < arr.length;x++) {
             for (int y = 0;y < arr[x].length;y++) {
@@ -48,23 +52,34 @@ public class GameBoardImpl implements GameBoard {
 
     @Override
     public GameBoard change(Coordinates coordinates) {
-        Color newColor = null;
-        switch(fields[coordinates.getX()][coordinates.getY()].getColor()){
-            case RED:{
-                newColor = Color.BLUE;
-                break;
-            }
-            case BLUE:{
-                newColor = Color.EMPTY;
-                break;
-            }
-            case EMPTY:{
-                newColor = Color.RED;
-                break;
+        if(fields[coordinates.getX()][coordinates.getY()].isLocked())
+            throw new IllegalArgumentException("This field is locked");
+
+        Color newColor = fields[coordinates.getX()][coordinates.getY()].getColor().change();
+
+        GameField[][] newArr = copy(fields);
+        newArr[coordinates.getX()][coordinates.getY()] = new GameField(newColor,false);
+
+        return new GameBoardImpl(fields);
+    }
+
+    private GameField[][] generate(int size){
+        if(size < 0) throw new InvalidParameterException("Field's size cannot be negative");
+        Random rn = new Random();
+        GameField[][] arr = new GameField[size][size];
+        int pocetLocknutejch = (int) Math.floor(size*size*LOCKED_FIELDS_PERCENT);
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                boolean lock = (rn.nextInt()%(1/LOCKED_FIELDS_PERCENT) == 0);
+
+                if(pocetLocknutejch<=0) lock = false;
+
+                arr[i][j] = new GameField(Color.byInt(rn.nextInt(Color.NUMBER_OF_COLORS)),lock);
+
+                if(lock) pocetLocknutejch--;
             }
         }
-        GameField[][] newArr = copy(fields);
-        newArr[coordinates.getX()][coordinates.getY()] = new GameField(newColor);
-        return new GameBoardImpl(fields);
+        rn = null;
+        return arr;
     }
 }

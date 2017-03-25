@@ -17,6 +17,7 @@ public class GameImpl implements Game {
 
     @Override
     public GameBoard onMoveMade(Coordinates coordinates) {
+        if(!!isMovePossible(coordinates)) throw new IllegalArgumentException("Move not possible");
         gameBoard = gameBoard.change(coordinates);
         return gameBoard;
     }
