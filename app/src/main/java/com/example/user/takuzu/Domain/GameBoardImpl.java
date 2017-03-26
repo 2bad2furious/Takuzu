@@ -62,7 +62,7 @@ public class GameBoardImpl implements GameBoard {
         GameField[][] newArr = copy(fields);
         newArr[coordinates.getX()][coordinates.getY()] = new GameField(newColor,false);
 
-        return new GameBoardImpl(fields);
+        return new GameBoardImpl(newArr);
     }
 
     private GameField[][] generate(int size){
