@@ -15,6 +15,7 @@ import java.util.Random;
 
 public class GameBoardImpl implements GameBoard {
     private final float LOCKED_FIELDS_PERCENT = 1/6;
+    private static Random rn = new Random();
     private GameField[][] fields;
 
     public GameBoardImpl(int size){
@@ -66,7 +67,6 @@ public class GameBoardImpl implements GameBoard {
 
     private GameField[][] generate(int size){
         if(size < 0) throw new InvalidParameterException("Field's size cannot be negative");
-        Random rn = new Random();
         GameField[][] arr = new GameField[size][size];
         int pocetLocknutejch = (int) Math.floor(size*size*LOCKED_FIELDS_PERCENT);
         for (int i = 0; i < arr.length; i++) {
@@ -78,7 +78,6 @@ public class GameBoardImpl implements GameBoard {
                 if(lock) pocetLocknutejch--;
             }
         }
-        rn = null;
         if(!isValid(arr)) arr = generate(size);
         return arr;
     }
