@@ -24,7 +24,10 @@ public class GameImpl implements Game {
 
     @Override
     public boolean isMovePossible(Coordinates coordinates) {
-        return (coordinates.getX() >= 0 && coordinates.getX() < gameBoard.columns() && coordinates.getY() >= 0 && coordinates.getY() < gameBoard.rows());
+        return (coordinates.getX() >= 0 &&
+                coordinates.getX() < gameBoard.columns() &&
+                coordinates.getY() >= 0 &&
+                coordinates.getY() < gameBoard.rows());
     }
 
     @Override
