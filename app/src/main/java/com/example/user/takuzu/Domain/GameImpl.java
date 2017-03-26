@@ -17,7 +17,7 @@ public class GameImpl implements Game {
 
     @Override
     public GameBoard onMoveMade(Coordinates coordinates) {
-        if(!!isMovePossible(coordinates)) throw new IllegalArgumentException("Move not possible");
+        if(!isMovePossible(coordinates)) throw new IllegalArgumentException("Move not possible");
         gameBoard = gameBoard.change(coordinates);
         return gameBoard;
     }
@@ -25,5 +25,10 @@ public class GameImpl implements Game {
     @Override
     public boolean isMovePossible(Coordinates coordinates) {
         return (coordinates.getX() >= 0 && coordinates.getX() < gameBoard.columns() && coordinates.getY() >= 0 && coordinates.getY() < gameBoard.rows());
+    }
+
+    @Override
+    public GameBoard getGameBoard() {
+        return gameBoard;
     }
 }

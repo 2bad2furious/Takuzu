@@ -5,7 +5,8 @@
 
     <com.example.user.takuzu.Presentation.game.GameBoardLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/game_board_layout">
 
     </com.example.user.takuzu.Presentation.game.GameBoardLayout>
 
