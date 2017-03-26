@@ -71,9 +71,8 @@ public class GameBoardImpl implements GameBoard {
         int pocetLocknutejch = (int) Math.floor(size*size*LOCKED_FIELDS_PERCENT);
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                boolean lock = (rn.nextInt()%(1/LOCKED_FIELDS_PERCENT) == 0);
 
-                if(pocetLocknutejch<=0) lock = false;
+                boolean lock = (pocetLocknutejch>0)?(rn.nextInt()%(1/LOCKED_FIELDS_PERCENT) == 0):false;
 
                 arr[i][j] = new GameField(Color.byInt(rn.nextInt(Color.NUMBER_OF_COLORS)),lock);
 
