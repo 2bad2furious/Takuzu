@@ -4,6 +4,7 @@ import com.example.user.takuzu.Domain.Model.Color;
 import com.example.user.takuzu.Domain.Model.Coordinates;
 import com.example.user.takuzu.Domain.Model.GameBoard;
 import com.example.user.takuzu.Domain.Model.GameField;
+import com.example.user.takuzu.Domain.Model.Solver;
 
 import java.security.InvalidParameterException;
 import java.util.Random;
@@ -80,6 +81,11 @@ public class GameBoardImpl implements GameBoard {
             }
         }
         rn = null;
+        if(!isValid(arr)) arr = generate(size);
         return arr;
+    }
+
+    private boolean isValid(GameField[][] arr){
+        return Solver.isSolvable(arr);
     }
 }
