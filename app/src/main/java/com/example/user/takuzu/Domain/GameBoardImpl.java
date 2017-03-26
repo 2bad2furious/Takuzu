@@ -14,7 +14,7 @@ import java.util.Random;
  */
 
 public class GameBoardImpl implements GameBoard {
-    private final int LOCKED_FIELDS_PERCENT = 1/6;
+    private final float LOCKED_FIELDS_PERCENT = 1/6;
     private GameField[][] fields;
 
     public GameBoardImpl(int size){
