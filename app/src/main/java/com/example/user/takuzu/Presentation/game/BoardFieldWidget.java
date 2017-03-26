@@ -14,6 +14,7 @@ import com.example.user.takuzu.R;
 import com.example.user.takuzu.Domain.Model.GameField;
 //import com.example.user.takuzu.Domain.Model.Player;
 //
+
 /**
  * Created by user on 15.01.2017.
  */
@@ -38,15 +39,13 @@ public class BoardFieldWidget extends View {
         this.row = row;
         this.column = column;
         setClickable(true);
-//        textPaint = new TextPaint();
-//        textPaint.setTextSize(40);
-//        textPaint.setColor(gameField.player() == Player.ANON ? Color.LTGRAY : gameField.player() == Player.FIRST_PLAYER ? Color.RED : Color.BLUE);
-//
-//        circlePaint = new Paint();
-//        circlePaint.setColor(gameField.player() == Player.ANON ? Color.LTGRAY : gameField.player() == Player.FIRST_PLAYER ? Color.RED : Color.BLUE);
 
         gridPaint = new Paint();
-        gridPaint.setColor(Color.LTGRAY);
+        gridPaint.setColor(gameField.getColor() == com.example.user.takuzu.Domain.Model.Color.EMPTY
+                ? Color.LTGRAY
+                : gameField.getColor() == com.example.user.takuzu.Domain.Model.Color.RED
+                ? Color.RED
+                : Color.BLUE);
 
         int[] attrs = new int[]{R.attr.selectableItemBackground};
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs);
@@ -76,25 +75,7 @@ public class BoardFieldWidget extends View {
         int width = getWidth();
         int height = getHeight();
 
-
-        int atomWidth = width / 3;
-
         canvas.drawRect(0, 0, width, height, gridPaint);
-
-//        if (gameField.atomCount() == 1) {
-//            canvas.drawOval((width/2)-(atomWidth/2), (height/2)-(atomWidth/2), (width/2)+(atomWidth/2), (height/2)+(atomWidth/2), circlePaint);
-//        } else if (gameField.atomCount() == 2){
-//            canvas.drawOval(marginSize, marginSize, atomWidth+marginSize, atomWidth+marginSize, circlePaint);
-//            canvas.drawOval((width-atomWidth)-marginSize, (height-atomWidth)-marginSize, width-marginSize, height-marginSize, circlePaint);
-//        } else if (gameField.atomCount() == 3) {
-//            canvas.drawOval((width/2)-(atomWidth/2), marginSize, (width/2)+(atomWidth/2), marginSize+atomWidth, circlePaint);
-//
-//            canvas.drawOval((width-atomWidth)-marginSize, (height-atomWidth)-marginSize, width-marginSize, height-marginSize, circlePaint);
-//            canvas.drawOval(marginSize, (height-atomWidth)-marginSize, marginSize + atomWidth, height-marginSize, circlePaint);
-//
-//        }
-
-
     }
 
     public int getRow() {
