@@ -20,7 +20,7 @@ public class GamePresenter extends RxPresenter<GameView> {
     @Override
     protected void onCreate(Bundle savedState) {
         super.onCreate(savedState);
-        game = GameImpl.createNew(6, 4);
+        game = new GameImpl(6);
 
         view().subscribe(view -> {
             if (view != null) {

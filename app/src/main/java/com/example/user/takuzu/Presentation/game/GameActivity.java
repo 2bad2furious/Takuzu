@@ -1,11 +1,13 @@
 package com.example.user.takuzu.Presentation.game;
 
+import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.user.takuzu.Domain.Model.GameBoard;
 import com.example.user.takuzu.R;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import nucleus.factory.RequiresPresenter;
 import nucleus.view.NucleusActivity;
 
@@ -16,9 +18,19 @@ import nucleus.view.NucleusActivity;
 @RequiresPresenter(GamePresenter.class)
 public class GameActivity extends NucleusActivity<GamePresenter> implements GameView {
 
-
     @BindView(R.id.game_board_layout)
     GameBoardLayout gameBoardLayout;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_game);
+        ButterKnife.bind(this);
+
+//        boolean gameMode = getIntent().getBooleanExtra("Type", false);
+
+        gameBoardLayout.setOnMoveListener((x, y) -> getPresenter().onMoveMade(x, y));
+    }
 
     @Override
     public void showGameBoard(GameBoard gameBoard) {

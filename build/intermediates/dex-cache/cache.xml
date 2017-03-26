@@ -3,57 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6f6e330e91d796e5701c66304a46862825d0e6f7">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_63249b3155cbf6d3a2f0e541b57be32838288cd4\classes.dex" />
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_c257c37332026c700768bb4f751575e77fd95b52\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_e2d4a999aee264e1e829b3b4fa3711725ddaadb9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_416ee355c166ab27449fd223f8498b1f564cee7b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_6821674030860086d2e07ce0280606a7f48a6f60\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rechtig\.gradle\caches\modules-2\files-2.1\com.google.auto.service\auto-service\1.0-rc2\51033a5b8fcf7039159e35b6878f106ccd5fb35f\auto-service-1.0-rc2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="51033a5b8fcf7039159e35b6878f106ccd5fb35f">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\auto-service-1.0-rc2_c1a3867bc10b04fd98ed1750d730e7f6afe84c50\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rechtig\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_c92f138d35c6e7a8f3fbc419b652f8012032781c\classes.dex" />
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_28f2d7d3e0b8c233055634a604b3012d204131b9\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,15 +39,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Rechtig\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_d937d6997df90a574ae654ec45f7f5159a2f22b6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Rechtig\.gradle\caches\modules-2\files-2.1\info.android15.nucleus\nucleus\4.0.0\1e1f47480688ef7452c813fbdb095440004481e6\nucleus-4.0.0.jar"
         jumboMode="true"
         optimize="true"
@@ -93,12 +48,66 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\info.android15.nucleus\nucleus-support-v7\4.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_1118f40d800264d5c18998fc4574e5f0bb8a6cc1\classes.dex" />
+        sha1="dd7c28e3d46e4ff9ada23cea9951789c9848f959">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\info.android15.nucleus-nucleus-support-v7-4.0.0_588015f4923da9ba673acd778da91de448f7be8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_516b98b15d33a7e6553e275bee2d4e2947de102f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\guava\guava\18.0\guava-18.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-18.0_23ae9d619c9ad952ac11ce7bff78df802e3e98c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_026894b57f9ffaffcd0c95fbd58d7292c90b9742\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_416ee355c166ab27449fd223f8498b1f564cee7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_c92f138d35c6e7a8f3fbc419b652f8012032781c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fdd8e05a5c25ae2583ce6ccea37b74b893ff2caf">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b30763796d123aa28c807b38c3e0fa3e45b299f3\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,12 +129,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\info.android15.nucleus\nucleus-support-v7\4.0.0\jars\classes.jar"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="dd7c28e3d46e4ff9ada23cea9951789c9848f959">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\info.android15.nucleus-nucleus-support-v7-4.0.0_588015f4923da9ba673acd778da91de448f7be8c\classes.dex" />
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_6a5d9afa7fcefb2051eb5880ebaa810a032c002f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -147,21 +156,75 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_a2101c107b76a2ddf444bd5988e8f621973feeb2\classes.dex" />
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_f9c52278fd41414a14116303f97cac6f488231f9\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_516b98b15d33a7e6553e275bee2d4e2947de102f\classes.dex" />
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton-butterknife-8.4.0_751c72522c9aededcb3bf253d606095eb545a7d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_e2d4a999aee264e1e829b3b4fa3711725ddaadb9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_6821674030860086d2e07ce0280606a7f48a6f60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\.gradle\caches\modules-2\files-2.1\com.google.auto.service\auto-service\1.0-rc2\51033a5b8fcf7039159e35b6878f106ccd5fb35f\auto-service-1.0-rc2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51033a5b8fcf7039159e35b6878f106ccd5fb35f">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\auto-service-1.0-rc2_c1a3867bc10b04fd98ed1750d730e7f6afe84c50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_1ec156bd629e967262a687c5a59e27fb78a432ef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_1118f40d800264d5c18998fc4574e5f0bb8a6cc1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_02ec3f8d55d36aab8215dea0ff66780e502c083d\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -174,15 +237,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\guava\guava\18.0\guava-18.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cce0823396aa693798f8882e64213b1772032b09">
-        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-18.0_23ae9d619c9ad952ac11ce7bff78df802e3e98c2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -192,12 +246,75 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f6e330e91d796e5701c66304a46862825d0e6f7">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_63249b3155cbf6d3a2f0e541b57be32838288cd4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3468e22f93488f64f90fa72dd68853fa44cb52d1">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_04afb3a468f54e1f10920ba68f31219904599906\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\info.android15.nucleus\nucleus-support-v7\4.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd7c28e3d46e4ff9ada23cea9951789c9848f959">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\info.android15.nucleus-nucleus-support-v7-4.0.0_1b1d974e7fa8abe611675ff2c2e9cf13208d7512\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_d937d6997df90a574ae654ec45f7f5159a2f22b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_bad5bcf14652461941ac8519f2ba8a7524d916fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_a2101c107b76a2ddf444bd5988e8f621973feeb2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
         <dex dex="C:\Users\Rechtig\Dropbox\Programovani\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_92882f18b91ee19fde55f2b41eca0bbb4cb1b3ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Rechtig\Dropbox\Programovani\C3-Android\takuzu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_653ecd455a95ef65a0bafd529a4bfc7efc4d408d\classes.dex" />
     </item>
 
 </items>
