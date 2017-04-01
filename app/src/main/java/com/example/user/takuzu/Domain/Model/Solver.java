@@ -8,4 +8,5 @@ public class Solver {
     public static boolean isSolvable(GameField[][] arr){
         return true;
     }
+    public static boolean isSolved(GameField[][] arr){return false;}
 }

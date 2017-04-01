@@ -11,4 +11,5 @@ public interface Game {
     GameBoard onMoveMade(Coordinates coordinates);
     boolean isMovePossible(Coordinates coordinates);
     GameBoard getGameBoard();
+    boolean isGameOver();
 }

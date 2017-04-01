@@ -9,4 +9,8 @@ public interface GameBoard {
     int rows();
     int columns();
     GameBoard change(Coordinates coordinates);
+    boolean isLocked(Coordinates coordinates);
+    boolean isOnBoard(Coordinates coordinates);
+    boolean isBoardFull();
+
 }

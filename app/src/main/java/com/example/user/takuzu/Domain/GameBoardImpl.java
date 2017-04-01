@@ -65,6 +65,29 @@ public class GameBoardImpl implements GameBoard {
         return new GameBoardImpl(newArr);
     }
 
+    @Override
+    public boolean isLocked(Coordinates coordinates) {
+        if(!isOnBoard(coordinates)) throw new InvalidParameterException("Invalid coordinates");
+        return (fields[coordinates.getX()][coordinates.getY()].isLocked());
+    }
+
+    public boolean isOnBoard(Coordinates coordinates){
+        return (coordinates.getX() > 0 &&
+                coordinates.getY() > 0 &&
+                coordinates.getX() < fields.length &&
+                coordinates.getY() < fields[0].length);
+    }
+
+    @Override
+    public boolean isBoardFull() {
+        for (GameField[] a:fields) {
+            for (GameField g:a) {
+                if(g.getColor()==Color.EMPTY) return false;
+            }
+        }
+        return true;
+    }
+
     private GameField[][] generate(int size){
         if(size < 0) throw new InvalidParameterException("Field's size cannot be negative");
         GameField[][] arr = new GameField[size][size];

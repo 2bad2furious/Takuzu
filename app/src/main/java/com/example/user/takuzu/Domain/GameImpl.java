@@ -3,6 +3,7 @@ package com.example.user.takuzu.Domain;
 import com.example.user.takuzu.Domain.Game.Game;
 import com.example.user.takuzu.Domain.Model.Coordinates;
 import com.example.user.takuzu.Domain.Model.GameBoard;
+import com.example.user.takuzu.Domain.Model.Solver;
 
 /**
  * Created by user on 06.03.2017.
@@ -33,5 +34,10 @@ public class GameImpl implements Game {
     @Override
     public GameBoard getGameBoard() {
         return gameBoard;
+    }
+
+    @Override
+    public boolean isGameOver() {
+        return gameBoard.isBoardFull() && Solver.isSolved(gameBoard.fields());
     }
 }

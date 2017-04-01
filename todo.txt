@@ -1,0 +1,3 @@
+isGameOver
+isLocked - gb
+isBoardFilled
