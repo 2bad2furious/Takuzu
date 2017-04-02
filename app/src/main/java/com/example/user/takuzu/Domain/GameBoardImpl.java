@@ -14,15 +14,15 @@ import java.util.Random;
  */
 
 public class GameBoardImpl implements GameBoard {
-    private final float LOCKED_FIELDS_PERCENT = 1/6;
+    private final float LOCKED_FIELDS_PERCENT = 1 / 6;
     private static Random rn = new Random();
     private GameField[][] fields;
 
-    public GameBoardImpl(int size){
+    public GameBoardImpl(int size) {
         fields = generate(size);
     }
 
-    private GameBoardImpl(GameField[][] arr){
+    private GameBoardImpl(GameField[][] arr) {
         this.fields = arr;
     }
 
@@ -32,7 +32,7 @@ public class GameBoardImpl implements GameBoard {
 
     @Override
     public int rows() {
-        if(fields[0] == null) throw new IllegalArgumentException("You fucking cock");
+        if (fields[0] == null) throw new IllegalArgumentException("You fucking cock");
         return fields[0].length;
     }
 
@@ -41,11 +41,11 @@ public class GameBoardImpl implements GameBoard {
         return fields.length;
     }
 
-    private GameField[][] copy(GameField[][] arr){
-        if(arr[0] == null) throw new IllegalArgumentException("Bollocks");
+    private GameField[][] copy(GameField[][] arr) {
+        if (arr[0] == null) throw new IllegalArgumentException("Bollocks");
         GameField[][] newArr = new GameField[arr.length][arr[0].length];
-        for (int x = 0;x < arr.length;x++) {
-            for (int y = 0;y < arr[x].length;y++) {
+        for (int x = 0; x < arr.length; x++) {
+            for (int y = 0; y < arr[x].length; y++) {
                 newArr[x][y] = arr[x][y].copy();
             }
         }
@@ -54,24 +54,24 @@ public class GameBoardImpl implements GameBoard {
 
     @Override
     public GameBoard change(Coordinates coordinates) {
-        if(fields[coordinates.getX()][coordinates.getY()].isLocked())
+        if (fields[coordinates.getX()][coordinates.getY()].isLocked())
             throw new IllegalArgumentException("This field is locked");
 
         Color newColor = fields[coordinates.getX()][coordinates.getY()].getColor().change();
 
         GameField[][] newArr = copy(fields);
-        newArr[coordinates.getX()][coordinates.getY()] = new GameField(newColor,false);
+        newArr[coordinates.getX()][coordinates.getY()] = new GameField(newColor, false);
 
         return new GameBoardImpl(newArr);
     }
 
     @Override
     public boolean isLocked(Coordinates coordinates) {
-        if(!isOnBoard(coordinates)) throw new InvalidParameterException("Invalid coordinates");
+        if (!isOnBoard(coordinates)) throw new InvalidParameterException("Invalid coordinates");
         return (fields[coordinates.getX()][coordinates.getY()].isLocked());
     }
 
-    public boolean isOnBoard(Coordinates coordinates){
+    public boolean isOnBoard(Coordinates coordinates) {
         return (coordinates.getX() > 0 &&
                 coordinates.getY() > 0 &&
                 coordinates.getX() < fields.length &&
@@ -80,32 +80,43 @@ public class GameBoardImpl implements GameBoard {
 
     @Override
     public boolean isBoardFull() {
-        for (GameField[] a:fields) {
-            for (GameField g:a) {
-                if(g.getColor()==Color.EMPTY) return false;
+        for (GameField[] a : fields) {
+            for (GameField g : a) {
+                if (g.getColor() == Color.EMPTY) return false;
             }
         }
         return true;
     }
 
-    private GameField[][] generate(int size){
-        if(size < 0) throw new InvalidParameterException("Field's size cannot be negative");
-        GameField[][] arr = new GameField[size][size];
-        int pocetLocknutejch = (int) Math.floor(size*size*LOCKED_FIELDS_PERCENT);
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                boolean lock = (pocetLocknutejch>0)?(rn.nextInt()%(1/LOCKED_FIELDS_PERCENT) == 0):false;
-
-                arr[i][j] = new GameField(Color.byInt(rn.nextInt(Color.NUMBER_OF_COLORS)),lock);
-
-                if(lock) pocetLocknutejch--;
+    @Override
+    public double filled() {
+        int filled = 0;
+        for (int i = 0; i < fields.length; i++) {
+            for (int j = 0; j < fields[i].length; j++) {
+                if (fields[i][j].getColor() != Color.EMPTY) filled++;
             }
         }
-        if(!isValid(arr)) arr = generate(size);
+        return filled / (fields.length * fields.length);
+    }
+
+    private GameField[][] generate(int size) {
+        if (size <= 0) throw new InvalidParameterException("Field's size cannot be negative");
+        GameField[][] arr = new GameField[size][size];
+        int pocetLocknutejch = (int) Math.floor(size * size * LOCKED_FIELDS_PERCENT);
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                boolean lock = (pocetLocknutejch > 0) ? (rn.nextInt() % (1 / LOCKED_FIELDS_PERCENT) == 0) : false;
+
+                arr[i][j] = new GameField(Color.byInt(rn.nextInt(Color.NUMBER_OF_COLORS - 1)), lock);
+
+                if (lock) pocetLocknutejch--;
+            }
+        }
+        if (!isValid(arr)) arr = generate(size);
         return arr;
     }
 
-    private boolean isValid(GameField[][] arr){
+    private boolean isValid(GameField[][] arr) {
         return Solver.isSolvable(arr);
     }
 }

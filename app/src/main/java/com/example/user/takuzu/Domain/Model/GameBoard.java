@@ -12,5 +12,6 @@ public interface GameBoard {
     boolean isLocked(Coordinates coordinates);
     boolean isOnBoard(Coordinates coordinates);
     boolean isBoardFull();
+    double filled();
 
 }
