@@ -15,16 +15,14 @@ import nucleus.presenter.RxPresenter;
 
 public class GamePresenter extends RxPresenter<GameView> {
 
-    private Game game;
+    private Game game = null;
 
     @Override
     protected void onCreate(Bundle savedState) {
         super.onCreate(savedState);
 
         view().subscribe(view -> {
-            if (view != null) {
-                view.showGameBoard(game.getGameBoard());
-            }
+            if (view != null) view.showGameBoard(game.getGameBoard());
         });
     }
 
