@@ -120,6 +120,7 @@ public class GameBoardImpl implements GameBoard {
         try {
             return Solver.isSolvable(arr);
         } catch (Exception e) {
+            System.out.println(e.getStackTrace());
             e.printStackTrace();
             System.exit(-550);
         }
