@@ -5,5 +5,5 @@ package com.example.user.takuzu.Domain.Model;
  */
 
 public enum NotSolvedReason {
-
+    ThreeInRow, ThreeInColumn, TwoSameColumns, TwoSameRows
 }
