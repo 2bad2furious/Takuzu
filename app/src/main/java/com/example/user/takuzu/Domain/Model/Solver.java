@@ -8,6 +8,9 @@ package com.example.user.takuzu.Domain.Model;
 public class Solver {
 
     public static boolean isSolvable(GameField[][] arr) {
+        boolean solCols = checkSolvableColumns(arr);
+        boolean solRows = checkSolvableRows(arr);
+        System.out.println("checkSolvableColumns: "+solCols+" checkSolvableRows: "+solRows);
         return (checkSolvableColumns(arr) && checkSolvableRows(arr));
     }
 
