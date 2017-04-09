@@ -22,10 +22,14 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    @OnClick(R.id.start)
+    public void startEasy(View view){
+        submit(6);
+    }
 
-    @OnClick(R.id.startGame)
-    public void submit(View view){
+    public void submit(int size){
         Intent intent = new Intent(this, GameActivity.class);
+        intent.putExtra("size", size);
         startActivity(intent);
     }
 }
