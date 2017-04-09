@@ -7,11 +7,12 @@ package com.example.user.takuzu.Domain.Model;
 /* TODO zhezčit xd */
 public class Solver {
 
-    public static boolean isSolvable(GameField[][] arr) {
+    public static boolean isSolvable(GameField[][] arr) throws Exception {
         boolean solCols = checkSolvableColumns(arr);
         boolean solRows = checkSolvableRows(arr);
-        System.out.println("checkSolvableColumns: "+solCols+" checkSolvableRows: "+solRows);
-        throw new Exception("checkSolvableColumns: "+solCols+" checkSolvableRows: "+solRows);
+        System.out.println("checkSolvableColumns: " + solCols + " checkSolvableRows: " + solRows);
+        if (true)
+            throw new Exception("checkSolvableColumns: " + solCols + " checkSolvableRows: " + solRows);
         return (checkSolvableColumns(arr) && checkSolvableRows(arr));
     }
 
@@ -21,7 +22,7 @@ public class Solver {
         return bool;
     }
 
-    private static boolean checkSolvableColumns(GameField[][] arr){
+    private static boolean checkSolvableColumns(GameField[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             int redCount;
             int blueCount;
@@ -45,12 +46,12 @@ public class Solver {
                 if (ColorLine >= 3) return false;
             }
 
-            if(redCount >= arr.length/2 || blueCount >= arr.length/2) return false;
+            if (redCount >= arr.length / 2 || blueCount >= arr.length / 2) return false;
         }
         return true;
     }
 
-    private static boolean checkSolvableRows(GameField[][] arr){
+    private static boolean checkSolvableRows(GameField[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             int redCount;
             int blueCount;
@@ -74,7 +75,7 @@ public class Solver {
                 if (ColorLine >= 3) return false;
             }
 
-            if(redCount >= arr.length/2 || blueCount >= arr.length/2) return false;
+            if (redCount >= arr.length / 2 || blueCount >= arr.length / 2) return false;
         }
         return true;
     }
@@ -103,7 +104,7 @@ public class Solver {
                 if (ColorLine >= 3) return false;
             }
 
-            if(redCount != blueCount) return false;
+            if (redCount != blueCount) return false;
         }
         return true;
     }
@@ -132,7 +133,7 @@ public class Solver {
                 if (ColorLine >= 3) return false;
             }
 
-            if(redCount != blueCount) return false;
+            if (redCount != blueCount) return false;
         }
         return true;
     }
