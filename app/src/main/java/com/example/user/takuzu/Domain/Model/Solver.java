@@ -11,7 +11,7 @@ public class Solver {
         boolean solCols = checkSolvableColumns(arr);
         boolean solRows = checkSolvableRows(arr);
         System.out.println("checkSolvableColumns: " + solCols + " checkSolvableRows: " + solRows);
-        if (true)
+        if (!solCols || !solRows)
             throw new Exception("checkSolvableColumns: " + solCols + " checkSolvableRows: " + solRows);
         return (checkSolvableColumns(arr) && checkSolvableRows(arr));
     }
