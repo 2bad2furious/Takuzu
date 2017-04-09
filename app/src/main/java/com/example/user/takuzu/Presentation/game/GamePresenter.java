@@ -15,18 +15,19 @@ import nucleus.presenter.RxPresenter;
 
 public class GamePresenter extends RxPresenter<GameView> {
 
-    private Game game;
+    private Game game = null;
 
     @Override
     protected void onCreate(Bundle savedState) {
         super.onCreate(savedState);
-        game = new GameImpl(6);
 
         view().subscribe(view -> {
-            if (view != null) {
-                view.showGameBoard(game.getGameBoard());
-            }
+            if (view != null) view.showGameBoard(game.getGameBoard());
         });
+    }
+
+    public void createGame(int size){
+        game = new GameImpl(size);
     }
 
     public void onMoveMade(int x, int y) {
