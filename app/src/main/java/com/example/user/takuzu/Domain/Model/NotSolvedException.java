@@ -9,7 +9,7 @@ public class NotSolvedException extends Exception {
     private NotSolvedReason reason;
     private int line;
 
-    public NotSolvedException() {
+    public NotSolvedException(NotSolvedReason reason) {
 
     }
 }
