@@ -18,7 +18,7 @@ public class GameBoardImpl implements GameBoard {
     private static Random rn = new Random();
     private GameField[][] fields;
 
-    public GameBoardImpl(int size) throws Exception {
+    public GameBoardImpl(int size) {
         fields = generate(size);
     }
 
@@ -99,7 +99,7 @@ public class GameBoardImpl implements GameBoard {
         return filled / (fields.length * fields.length);
     }
 
-    private GameField[][] generate(int size) throws Exception {
+    private GameField[][] generate(int size) {
         if (size <= 0) throw new InvalidParameterException("Field's size cannot be negative");
         GameField[][] arr = new GameField[size][size];
         int pocetLocknutejch = (int) Math.floor(size * size * LOCKED_FIELDS_PERCENT);
@@ -116,7 +116,13 @@ public class GameBoardImpl implements GameBoard {
         return arr;
     }
 
-    private boolean isValid(GameField[][] arr) throws Exception {
-        return Solver.isSolvable(arr);
+    private boolean isValid(GameField[][] arr) {
+        try {
+            return Solver.isSolvable(arr);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(-550);
+        }
+        return false;
     }
 }
